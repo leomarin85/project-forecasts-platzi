@@ -391,12 +391,4 @@ const dateSoccer = [
   },
 ];
 
-const arr = ['natalia','juanita','luisa','tatiana'];
-const arr2 = arr.splice(3,1);
-console.log(arr2);
-console.log(arr);
-// const eveFil = filtrandoEventos(1.15,1.30,'local');
-// console.log(eveFil);
 
-// const resulGoles = totalGoles(eveFil, 'local1T','visita1T');
-// console.log(resulGoles);
