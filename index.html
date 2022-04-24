@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadistica Deportiva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="container-form">
+      <form action="" class="form">
+        <h1>Estadistica Deportivo</h1>
+        <div class="container-label">
+          <label for="equipo" class="label">Filtrar Cuotas Equipo</label>
+          <select name="equipo" id="equipo">
+            <option value="local">Local</option>
+            <option value="empate">Empate</option>
+            <option value="visita">Visita</option>
+          </select>
+        </div>
+        <div class="container-label">
+          <label for="cuota-mas" class="label">Cuota Mayor a:</label>
+          <input type="text" id="cuota-mas" class="input input-cuota-mas">
+        </div>
+        <div class="container-label">
+          <label for="cuota-menos" class="label">Cuota Menor a:</label>
+          <input type="text" id="cuota-menos" class="input input-cuota-menos">
+        </div>
+        
+        <select name="opciones" id="opciones" class="input-opciones">
+          <optgroup label="Porcentaje">
+            <option value="1">Primer Tiempo Local</option>
+            <option value="2">Primer Tiempo Empate</option>
+            <option value="3">Primer Tiempo Visita</option>
+            <option value="4">Tiempo Completo Local</option>
+            <option value="5">Tiempo Completo Empate</option>
+            <option value="6">Tiempo Completo Visita</option>
+            <option value="7">Local / Local</option>
+            <option value="8">Local / Empate</option>
+            <option value="9">Local / Visita</option>
+            <option value="10">Empate / Local</option>
+            <option value="11">Empate / Empate</option>
+            <option value="12">Empate / Visita</option>
+            <option value="13">Visita / Local</option>
+            <option value="14">Visita / Empate</option>
+            <option value="15">Visita / Visita</option>
+          </optgroup>
+          <optgroup label="Mediana">
+            <option value="16">Goles Ambos Equipos Primer Tiempo</option>
+            <option value="17">Goles Ambos Equipos Tiempo Completo</option>
+            <option value="18">Goles Equipo Local Primer Tiempo</option>
+            <option value="19">Goles Equipo Visita Primer Tiempo</option>
+            <option value="20">Goles Equipo Local Tiempo Completo</option>
+            <option value="21">Goles Equipo Visita Tiempo Completo</option>
+          </optgroup>
+          <optgroup label="Moda">
+            <option value="22">Marcador Primer Tiempo</option>
+            <option value="23">Marcador Tiempo Completo</option>
+          </optgroup>
+        </select>
+        <div class="container-button">
+          <input type="button" class="primary-button" value="Pronosticar" onclick="pronosticarBoton()">
+        </div>
+      </form>
+      <p id="resultados"></p>
+    </div>
+  </div>
+  
+  <script src="./index.js"></script>
+</body>
+</html>
